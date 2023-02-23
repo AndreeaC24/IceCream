@@ -193,7 +193,41 @@
   }
 }
 
+.hero__about {
+  height: 350px;
+  .hero__title {
+  }
+  .hero__circle {
+    width: 250px;
+    height: 250px;
+    bottom: 30px;
+  }
+}
+
 @media screen and (min-width: 768px) {
+  .hero__about {
+    height: 350px !important;
+    .hero__inner {
+      height: 150px;
+    }
+    .hero__circle {
+      width: 250px;
+      height: 250px;
+      bottom: 0px;
+      right: 250px;
+    }
+    .hero__title {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .hero__inner--left--img {
+      position: absolute;
+      left: 100px;
+      bottom: -50px;
+    }
+  }
+
   .hero {
     height: 416px;
     &__inner {
