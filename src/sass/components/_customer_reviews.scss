@@ -1,0 +1,248 @@
+/*CUSTOMER*/
+.customer {
+    &__title {
+      display: none;
+      font-family: var(--second-font);
+      font-size: 18px;
+      line-height: 21px;
+      text-align: center;
+      text-transform: uppercase;
+      color: var(--secondary1-color);
+      padding-bottom: 10px;
+    }
+  }
+  .carousel {
+    position: relative;
+    // box-shadow: 0px 4px 6px -3px rgba(0, 0, 0, 0.6);
+    margin: 60px 0 360px 0;
+    &__inner {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      &--svg {
+        cursor: pointer;
+        fill: var(--gray-color);
+        width: 12px;
+        height: 11px;
+      }
+      &--open:checked + .carousel__item {
+        position: static;
+        opacity: 1;
+      }
+      &__control {
+        display: none;
+        top: 58%;
+        -webkit-transform: translate(0, -58%);
+        -ms-transform: translate(0, -58%);
+        transform: translate(0, -58%);
+        @extend %indicators;
+        &--prev {
+          left: 2%;
+        }
+        &--next {
+          right: 2%;
+        }
+        svg {
+          fill: var(--gray-color);
+          stroke: transparent;
+          width: 40px;
+          height: 40px;
+        }
+      }
+      &__indicators {
+        margin: 0;
+        padding: 0;
+        bottom: 0.5%;
+        left: 0;
+        right: 0;
+        @extend %indicators;
+        li {
+          display: inline-block;
+          margin: 0 5px;
+        }
+      }
+    }
+    &__item {
+      position: absolute;
+      opacity: 0;
+      padding-bottom: 20px;
+      &__bullet {
+        @include flex;
+        gap: 10px;
+        padding: 16px 0;
+        svg {
+          fill: #c7133e;
+          width: 4px;
+          height: 4px;
+        }
+      }
+      &__review {
+        display: block;
+        height: auto;
+        max-width: var(--max-width);
+        &--container {
+          background-color: var(--secondary2-color);
+        }
+        &--inner {
+          background: repeating-linear-gradient(
+            var(--secondary2-color),
+            var(--secondary2-color) 30px,
+            #e1e1e1 20px,
+            #e1e1e1 31px
+          );
+          width: 280px;
+          height: 266px;
+          @include center;
+        }
+        &__msg {
+          font-family: var(--main-font);
+          text-align: center;
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 2.55;
+          color: var(--black-color);
+          position: relative;
+          width: 157px;
+          height: 239px;
+          @include center;
+          z-index: 1;
+          &::before {
+            content: "";
+            background-image: url("../src/images/customers/apostrof.jpg");
+            width: 54px;
+            height: 40px;
+            display: block;
+            background-size: contain;
+            position: absolute;
+            top: -12px;
+            left: -15px;
+            z-index: -1;
+          }
+        }
+        &__photo {
+          display: block;
+          border-radius: 44px;
+          overflow: hidden;
+          @include center;
+          width: 85px;
+          height: 85px;
+          margin-bottom: 32px;
+        }
+        &__info {
+          @include flex;
+          &--title {
+            font-weight: 500;
+            line-height: 26px;
+            text-align: center;
+            color: var(--black-color);
+            padding-bottom: 16px;
+          }
+        }
+      }
+    }
+  }
+  #carousel-1:checked ~ .carousel__inner__control--1,
+  #carousel-2:checked ~ .carousel__inner__control--2,
+  #carousel-3:checked ~ .carousel__inner__control--3 {
+    display: block;
+  }
+  
+  #carousel-1:checked
+    ~ .carousel__inner__control--1
+    ~ .carousel__inner__indicators
+    li:nth-child(1)
+    .carousel__inner__indicators--bullet,
+  #carousel-2:checked
+    ~ .carousel__inner__control--2
+    ~ .carousel__inner__indicators
+    li:nth-child(2)
+    .carousel__inner__indicators--bullet,
+  #carousel-3:checked
+    ~ .carousel__inner__control--3
+    ~ .carousel__inner__indicators
+    li:nth-child(3)
+    .carousel__inner__indicators--bullet {
+    background-color: transparent;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='12' height='11' viewBox='0 0 12 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.8497 5.28727C12.0672 5.06411 12.0462 4.72207 11.8028 4.5235L6.43981 0.146237C6.19638 -0.0523315 5.80611 -0.0481718 5.56781 0.155614L0.186634 4.75688C-0.0516656 4.96066 -0.0633615 5.30227 0.160739 5.51955L0.295652 5.65062C0.519479 5.86791 0.88127 5.89381 1.10322 5.70831L1.50538 5.37236V10.2907C1.50538 10.5924 1.7675 10.8367 2.09076 10.8367H4.18836C4.51162 10.8367 4.77374 10.5924 4.77374 10.2907V6.84984H7.44925V10.2907C7.4446 10.5922 7.6759 10.8365 7.99916 10.8365H10.2221C10.5453 10.8365 10.8075 10.5922 10.8075 10.2905V5.44161C10.8075 5.44161 10.9186 5.5324 11.0556 5.64474C11.1924 5.75687 11.4797 5.66697 11.6972 5.44358L11.8497 5.28727Z' fill='%23D31342'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: 12px 11px;
+    svg {
+      visibility: hidden;
+    }
+  }
+  
+  input:checked + .carousel__item .carousel__item__review {
+    /* opacity:1; */
+    transform: translateX(0) rotateY(0deg);
+    animation-name: animation_carousel;
+    animation-duration: 1.5s;
+  }
+  @keyframes animation_carousel {
+    0% {
+      transform: rotateY(90deg);
+      opacity: 0;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .carousel__item__review {
+      &__info--title {
+        font-size: 16px;
+        line-height: 30px;
+        padding-bottom: 32px;
+      }
+  
+      &__msg {
+        line-height: 30px;
+        width: 514px;
+        height: 83px;
+  
+        &::before {
+          top: -15px;
+          left: -35px;
+        }
+      } 
+      &__photo {
+        margin-bottom: 57px;
+      }
+  
+      &--inner {
+        width: 620px;
+        height: 100px;
+        padding: 0 55px 0 50px;
+      }
+    }
+  }
+  @media (min-width: 1200px) {
+    .carousel {
+      margin: 120px 0 220px 0;
+      &__item {
+        &__bullet {
+          padding-top: 47px;
+        }
+        &__review {
+          &__photo {
+            margin-bottom: 16px;
+          }
+          &__msg {
+            line-height: 30px;
+            width: 650px;
+            height: 62px;
+          }
+          &--inner {
+            width: 730px;
+            height: 63px;
+          }
+          &::before {
+            top: -15px;
+            left: -42px;
+          }
+          &__info--title {
+            font-size: 20px;
+            line-height: 37px;
+          }
+        }
+      }
+    }
+  }
+  

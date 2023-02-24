@@ -4,21 +4,181 @@
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>IceCream grupa 3</title>
 
-  <link rel="stylesheet" href="./css/main.min.css" />
+  <link rel="stylesheet" href="./css/main.min.css"/>
 
-<!-- Google Fonts -->
-   <link rel="preconnect" href="https://fonts.googleapis.com" />
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Titan+One&display=swap" rel="stylesheet"/>
- 
-<!-- Normalize -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
- </head>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap" rel="stylesheet" />
+
+  <!-- Normalize -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+</head>
+
 <body>
-  
+<!--CUSTOMERS - FEEDBACK-->
+  <section class="customer container">
+    <h1 class="customer__title" id="customers">Customers</h1>
+    <div class="carousel">
+      <div class="carousel__inner">
+        <input class="carousel__inner--open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+        <div class="carousel__item">
+          <div class="carousel__item__review">
+            <img srcset="./images/customers/testimonial.jpg 480w,./images/customers/testimonial1@2x.jpg 960w" src="./images/customers/testimonial.jpg" sizes="480px" alt="Emily" class="carousel__item__review__photo">
+            <div class="carousel__item__review--container">
+              <div class="carousel__item__review--inner">
+                <p class="carousel__item__review__msg">
+                  Nullam viverra consectetuer. Quisque cursus et, porttitor
+                  risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan
+                  congue. Lorem ipsum primis in nibh vel risus.
+                </p>
+              </div>
+            </div>
+            <span class="carousel__item__bullet">
+              <svg>
+                <use href="../src/images/icons.svg#bullet"></use>
+              </svg>
+              <svg>
+                <use href="../src/images/icons.svg#bullet"></use>
+              </svg>
+              <svg>
+                <use href="../src/images/icons.svg#bullet"></use>
+              </svg>
+            </span>
+
+            <div class="carousel__item__review__info">
+              <h3 class="carousel__item__review__info--title">
+                Emily, Los Angeles
+              </h3>
+            </div>
+          </div>
+        </div>
+        <input class="carousel__inner--open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+        <div class="carousel__item">
+          <div class="carousel__item__review">
+            <img srcset="./images/customers/testimonial2.jpg 480w,./images/customers/testimonial2@2x.jpg 960w" src="./images/customers/testimonial2.jpg" sizes="480px" alt="Mila" class="carousel__item__review__photo">
+            <div class="carousel__item__review--container">
+              <div class="carousel__item__review--inner">
+                <p class="carousel__item__review__msg">
+                  Nullam viverra consectetuer. Quisque cursus et, porttitor
+                  risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan
+                  congue. Lorem ipsum primis in nibh vel risus.
+                </p>
+              </div>
+            </div>
+            <span class="carousel__item__bullet">
+              <svg>
+                <use href="../src/images/icons.svg#bullet"></use>
+              </svg>
+              <svg>
+                <use href="../src/images/icons.svg#bullet"></use>
+              </svg>
+              <svg>
+                <use href="../src/images/icons.svg#bullet"></use>
+              </svg>
+            </span>
+            <div class="carousel__item__review__info">
+              <h3 class="carousel__item__review__info--title">
+                Mila, New York
+              </h3>
+            </div>
+          </div>
+        </div>
+        <input class="carousel__inner--open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+        <div class="carousel__item">
+          <div class="carousel__item__review">
+            <img srcset="./images/customers/testimonial3.jpg 480w,./images/customers/testimonial3@2x.jpg 960w" src="./images/customers/testimonial3.jpg" sizes="480px" alt="Agata" class="carousel__item__review__photo">
+            <div class="carousel__item__review--container">
+              <div class="carousel__item__review--inner">
+                <p class="carousel__item__review__msg">
+                  Nullam viverra consectetuer. Quisque cursus et, porttitor
+                  risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan
+                  congue. Lorem ipsum primis in nibh vel risus.
+                </p>
+              </div>
+            </div>
+            <span class="carousel__item__bullet">
+              <svg>
+                <use href="../src/images/icons.svg#bullet"></use>
+              </svg>
+              <svg>
+                <use href="../src/images/icons.svg#bullet"></use>
+              </svg>
+              <svg>
+                <use href="../src/images/icons.svg#bullet"></use>
+              </svg>
+            </span>
+            <div class="carousel__item__review__info">
+              <h3 class="carousel__item__review__info--title">
+                Agata, California
+              </h3>
+            </div>
+          </div>
+        </div>
+        <label for="carousel-3"
+          class="carousel__inner__control carousel__inner__control--prev carousel__inner__control--1">
+          <svg class="carousel__inner--svg">
+            <use href="../src/images/icons.svg#circle_left"></use>
+          </svg>
+        </label>
+        <label for="carousel-2"
+          class="carousel__inner__control carousel__inner__control--next carousel__inner__control--1">
+          <svg class="carousel__inner--svg">
+            <use href="../src/images/icons.svg#circle_right"></use>
+          </svg>
+        </label>
+        <label for="carousel-1"
+          class="carousel__inner__control carousel__inner__control--prev carousel__inner__control--2">
+          <svg class="carousel__inner--svg">
+            <use href="../src/images/icons.svg#circle_left"></use>
+          </svg>
+        </label>
+        <label for="carousel-3"
+          class="carousel__inner__control carousel__inner__control--next carousel__inner__control--2">
+          <svg class="carousel__inner--svg">
+            <use href="../src/images/icons.svg#circle_right"></use>
+          </svg>
+        </label>
+        <label for="carousel-2"
+          class="carousel__inner__control carousel__inner__control--prev carousel__inner__control--3">
+          <svg class="carousel__inner--svg">
+            <use href="../src/images/icons.svg#circle_left"></use>
+          </svg>
+        </label>
+        <label for="carousel-1"
+          class="carousel__inner__control carousel__inner__control--next carousel__inner__control--3">
+          <svg class="carousel__inner--svg">
+            <use href="../src/images/icons.svg#circle_right"></use>
+          </svg></label>
+        <ol class="carousel__inner__indicators container--unstyled-list">
+          <li>
+            <label for="carousel-1" class="carousel__inner__indicators--bullet">
+              <svg class="carousel__inner--svg">
+                <use href="../src/images/icons.svg#bullet"></use>
+              </svg>
+            </label>
+          </li>
+          <li>
+            <label for="carousel-2" class="carousel__inner__indicators--bullet">
+              <svg class="carousel__inner--svg">
+                <use href="../src/images/icons.svg#bullet"></use>
+              </svg></label>
+          </li>
+          <li>
+            <label for="carousel-3" class="carousel__inner__indicators--bullet">
+              <svg class="carousel__inner--svg">
+                <use href="../src/images/icons.svg#bullet"></use>
+              </svg>
+            </label>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
   <!--JS Files-->
 </body>
 </html>
