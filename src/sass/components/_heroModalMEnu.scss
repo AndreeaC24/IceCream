@@ -100,6 +100,11 @@
   margin-top: 26px;
   max-width: 230px;
   align-self: center;
+  &:hover {
+    transform: translateY(-15px);
+    font-weight: 700;
+    transition: 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .header__button__icon {
