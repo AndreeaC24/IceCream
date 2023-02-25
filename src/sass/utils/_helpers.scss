@@ -6,3 +6,23 @@
     z-index: 10;
     position: absolute;
 }
+
+%animationPink {
+    font-family: var(--second-font);
+    font-size: 18px;
+    line-height: 21px;
+    color: var(--secondary1-color);
+    @include transitionCubicBezier;
+    display: inline-block;
+  }
+  %ColumnFlex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  
+  %SocialPink {
+    background-color: var(--brand-color);
+    cursor: pointer;
+  }
+ 

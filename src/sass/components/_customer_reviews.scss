@@ -108,7 +108,7 @@
           z-index: 1;
           &::before {
             content: "";
-            background-image: url("../src/images/customers/apostrof.jpg");
+            background-image: url("../images/customers/apostrof.png");
             width: 54px;
             height: 40px;
             display: block;
@@ -245,4 +245,11 @@
       }
     }
   }
+  @media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .carousel__item__review__msg::before {
+    background-image: url("../images/customers/apostrof@2x.png");
+  }
+}
   
