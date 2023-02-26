@@ -101,12 +101,38 @@
           <button class="form__button">I want that</button>
         </div>
       </div>
+      <!-- Fereastra modala -->
+      <div class="modal is-hidden" data-modal>
+        <div class="modal-inner">
+          <button class="modal-close" type="button" data-modal-close1>
+            <svg width="11" height="11">
+              <line x1="0" y1="0" x2="11" y2="11" stroke-width="4" />
+              <line x1="11" y1="0" x2="0" y2="11" stroke-width="4" />
+            </svg>
+          </button>
+          <h2 class="hero__title">Super duper Ice Cream</h2>
+          <form class="modal__form">
+            <input type="text" name="name" placeholder="Name" />
+            <input type="tel" name="phone" placeholder="Phone" />
+            <input type="email" name="email" placeholder="Mail" />
+            <textarea
+              name="Message"
+              placeholder="Write us something"
+            ></textarea>
+          </form>
+          <button class="form__button">I want that</button>
+        </div>
+      </div>
       <!-- Header section -->
       <header class="header">
         <div class="header__inner hero-container">
           <img
             width="200"
             height="50"
+            srcset="
+              ./src/images/Vlad/logo/Grouplogo.png    200w,
+              ./src/images/Vlad/logo/GroupLogo400.png 400w
+            "
             src="./src/images/Vlad/logo/Grouplogo.png"
             alt="logo"
           />
@@ -147,6 +173,11 @@
             <li><button class="button--red">Products</button></li>
             <li>
               <button class="button--white">How it's made?</button>
+            </li>
+            <li>
+              <button class="button--red hide--button" data-modal-open1>
+                Buy now
+              </button>
             </li>
           </ul>
           <div class="hero__inner--left--div">
@@ -508,19 +539,12 @@
         </svg>
       </button>
 
-      <button class="modal__button" type="button" data-modal-open>
-        Buy now
-        <svg class="header__button__icon">
-          <use href="./images/svg/symbol-defs.svg#icon-arrow"></use>
-        </svg>
-      </button>
-
       <ul class="mobile-menu">
         <li class="mobile-menu__item">
           <a class="link" href="index.html"> Home </a>
         </li>
         <li class="mobile-menu__item">
-          <a class="link" href="aboutUs.html"> About us </a>
+          <a class="link" href="about_us.html"> About us </a>
         </li>
         <li class="mobile-menu__item">
           <a class="link" href="contacts.html"> How it's made? </a>
@@ -542,5 +566,6 @@
     ></script>
     <script defer src="./src/js/heroMobileMenu.js"></script>
     <script src="./src/js/heroModal.js"></script>
+    <script src="./src/js/heroModal1.js"></script>
   </body>
 </html>
