@@ -28,16 +28,23 @@ img {
   height: auto;
 }
 
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
 .container {
   max-width: 480px;
   padding-left: 15px;
   padding-right: 15px;
   width: 100%;
   @include center;
-    &--link {
-  text-decoration: none;
-    }
-    &--unstyled-list {
+  &--link {
+    text-decoration: none;
+  }
+  &--unstyled-list {
     list-style-type: none;
   }
 }

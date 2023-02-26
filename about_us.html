@@ -1,98 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IceCream grupa 3</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>IceCream grupa 3</title>
+    <link rel="stylesheet" href="./src/css/main.min.css" />
 
-  <link rel="stylesheet" href="./src/css/main.min.css"/>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap" rel="stylesheet" />
+    <!-- Normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+  </head>
 
-  <!-- Normalize -->
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
-</head>
+  <body>
+    <!--mini-HERO------------------------------------------------------->
+    <section class="hero hero__about">
+      <!-- Bubbles -->
+      <div class="bubbles">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+      </div>
+      <!-- Fereastra modala -->
+      <div class="modal is-hidden" data-modal>
+        <div class="modal-inner">
+          <button class="modal-close" type="button" data-modal-close>
+            <svg width="11" height="11">
+              <line x1="0" y1="0" x2="11" y2="11" stroke-width="4" />
+              <line x1="11" y1="0" x2="0" y2="11" stroke-width="4" />
+            </svg>
+          </button>
+          <h2 class="hero__title">Super duper Ice Cream</h2>
+          <form class="modal__form">
+            <input type="text" name="name" placeholder="Name" />
+            <input type="tel" name="phone" placeholder="Phone" />
+            <input type="email" name="email" placeholder="Mail" />
+            <textarea
+              name="Message"
+              placeholder="Write us something"
+            ></textarea>
+          </form>
+          <button class="form__button">I want that</button>
+        </div>
+      </div>
+      <!-- Header section -->
+      <header class="header">
+        <div class="header__inner hero-container">
+          <img
+            width="200"
+            height="50"
+            src="./src/images/Vlad/logo/Grouplogo.png"
+            alt="logo"
+          />
+          <nav>
+            <ul class="header__nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about_us.html">About us</a></li>
+              <li><a href="">How it’s made?</a></li>
+              <li><a href="">Our products</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </nav>
+          <button class="button--nav js-open-menu">
+            <svg class="nav--icon">
+              <use
+                href="./src/images/Vlad/svg/symbol-defs.svg#icon-nav-button"
+              ></use>
+            </svg>
+          </button>
+          <button class="button header__button" data-modal-open>
+            Buy now
+            <svg class="header__button__icon">
+              <use
+                href="./src/images/Vlad/svg/symbol-defs.svg#icon-arrow"
+              ></use>
+            </svg>
+          </button>
+        </div>
+      </header>
+      <!-- Hero section -->
+      <div class="hero__inner hero-container">
+        <h1 class="hero__title">
+          <span class="hero__title--span">About Us</span>
+        </h1>
+        <div class="hero__inner--left--div">
+          <div class="hero__inner--left--img"></div>
+        </div>
+        <!-- Circle and photo div -->
+        <div class="hero__circle"></div>
+      </div>
+    </section>
 
-<body>
-<!--HEADER----------------------------------------------------->
+    <!--DESCRIPTION--------------------------------------------------->
 
-<!--mini-HERO------------------------------------------------------->
+    <!--GOALS----------------------------------------------->
 
-<!--DESCRIPTION--------------------------------------------------->
+    <!--MEMBERS------------------------------------------------->
 
-<!--GOALS----------------------------------------------->
-
-<!--MEMBERS------------------------------------------------->
-
-<!--FOOTER--------------------------------------------------------->
-<footer class="footer__container">
-  <div class="container">
-      <h2 class="footer__container--title" id="footer">Footer</h2>
-      <div class="footer__container--top">
+    <!--FOOTER--------------------------------------------------------->
+    <footer class="footer__container">
+      <div class="container">
+        <h2 class="footer__container--title" id="footer">Footer</h2>
+        <div class="footer__container--top">
           <div class="footer__container--left">
-              <div class="footer__container__msg">
-                  <p class="footer__container__msg--title">homemade ice cream</p>
-                  <span class="footer__container__msg--title-clickable">made</span>
-              </div>
-              <div class="footer__container__msg--subtitle">
-                  <span>w</span>
-                  <span>i</span>
-                  <span>t</span>
-                  <span>h</span>
-                  <span>&nbsp;</span>
-                  <span>p</span>
-                  <span>a</span>
-                  <span>s</span>
-                  <span>s</span>
-                  <span>i</span>
-                  <span>o</span>
-                  <span>n</span>
-              </div>
+            <div class="footer__container__msg">
+              <p class="footer__container__msg--title">homemade ice cream</p>
+              <span class="footer__container__msg--title-clickable">made</span>
+            </div>
+            <div class="footer__container__msg--subtitle">
+              <span>w</span>
+              <span>i</span>
+              <span>t</span>
+              <span>h</span>
+              <span>&nbsp;</span>
+              <span>p</span>
+              <span>a</span>
+              <span>s</span>
+              <span>s</span>
+              <span>i</span>
+              <span>o</span>
+              <span>n</span>
+            </div>
           </div>
           <div class="footer__container--right">
-              <ul class="footer__social__list container--unstyled-list">
-                  <li class="footer__social__list">
-                      <a class="footer__social__list--link" href="#" target="_blank">
-                          <svg class="footer__social__list--icon">
-                              <use href="./src/images/icons.svg#icon_github"></use>
-                          </svg>
-                      </a>
-                  </li>
-                  <li class="footer__social__list">
-                      <a class="footer__social__list--link" href="#" target="_blank">
-                          <svg class="footer__social__list--icon">
-                              <use href="./src/images/icons.svg#icon_telegram"></use>
-                          </svg>
-                      </a>
-                  </li>
+            <ul class="footer__social__list container--unstyled-list">
+              <li class="footer__social__list">
+                <a class="footer__social__list--link" href="#" target="_blank">
+                  <svg class="footer__social__list--icon">
+                    <use href="./src/images/icons.svg#icon_github"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social__list">
+                <a class="footer__social__list--link" href="#" target="_blank">
+                  <svg class="footer__social__list--icon">
+                    <use href="./src/images/icons.svg#icon_telegram"></use>
+                  </svg>
+                </a>
+              </li>
 
-                  <li class="footer__social__list">
-                      <a class="footer__social__list--link" href="#" target="_blank">
-                          <svg class="footer__social__list--icon">
-                              <use href="./src/images/icons.svg#icon_facebook"></use>
-                          </svg>
-                      </a>
-                  </li>
-              </ul>
+              <li class="footer__social__list">
+                <a class="footer__social__list--link" href="#" target="_blank">
+                  <svg class="footer__social__list--icon">
+                    <use href="./src/images/icons.svg#icon_facebook"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
 
-              <div class="footer__contact--link">
-                  <span class="footer__contact--text">Feel free to contact</span>
-                  <a href="tel:+610383766284" class="footer__contact--phone  container--link">+61 (0) 383 766 284</a>
-              </div>
+            <div class="footer__contact--link">
+              <span class="footer__contact--text">Feel free to contact</span>
+              <a
+                href="tel:+610383766284"
+                class="footer__contact--phone container--link"
+                >+61 (0) 383 766 284</a
+              >
+            </div>
           </div>
-      </div>
-      <div class="footer__container--copyright">
+        </div>
+        <div class="footer__container--copyright">
           <p class="footer__container--copyright_text">
-              &#169; 2022 - IceCream. All Rights Reserved.
+            &#169; 2022 - IceCream. All Rights Reserved.
           </p>
+        </div>
       </div>
-  </div>
-</footer>
-</body>
+    </footer>
+    <!-- Modal window -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="js-close-menu close-menu">
+        <svg
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <button class="modal__button" type="button" data-modal-open>
+        Buy now
+        <svg class="header__button__icon">
+          <use href="./images/svg/symbol-defs.svg#icon-arrow"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li class="mobile-menu__item">
+          <a class="link" href="index.html"> Home </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="link" href="aboutUs.html"> About us </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="link" href="contacts.html"> How it’s made? </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="link" href="contacts.html"> Our products </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="link" href="contacts.html"> Contact </a>
+        </li>
+      </ul>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/heroMobileMenu.js"></script>
+    <script src="./js/heroModal.js"></script>
+  </body>
 </html>
