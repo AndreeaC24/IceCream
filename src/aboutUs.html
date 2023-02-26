@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IceCream grupa 3</title>
 
-    <link rel="stylesheet" href="./src/css/main.min.css" />
+    <link rel="stylesheet" href="../css/main.min.css" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Titan+One&display=swap"
       rel="stylesheet"
     />
 
@@ -22,9 +22,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
   </head>
-
   <body>
-    <!--mini-HERO------------------------------------------------------->
+    <!-- Hero section -->
     <section class="hero hero__about">
       <!-- Bubbles -->
       <div class="bubbles">
@@ -103,17 +102,17 @@
       </div>
       <!-- Header section -->
       <header class="header">
-        <div class="header__inner hero-container">
+        <div class="header__inner container">
           <img
             width="200"
             height="50"
-            src="./src/images/Vlad/logo/Grouplogo.png"
+            src="./images/Vlad/logo/Grouplogo.png"
             alt="logo"
           />
           <nav>
             <ul class="header__nav">
               <li><a href="index.html">Home</a></li>
-              <li><a href="about_us.html">About us</a></li>
+              <li><a href="aboutUs.html">About us</a></li>
               <li><a href="">How it’s made?</a></li>
               <li><a href="">Our products</a></li>
               <li><a href="">Contact</a></li>
@@ -122,108 +121,29 @@
           <button class="button--nav js-open-menu">
             <svg class="nav--icon">
               <use
-                href="./src/images/Vlad/svg/symbol-defs.svg#icon-nav-button"
+                href="./images/Vlad/svg/symbol-defs.svg#icon-nav-button"
               ></use>
             </svg>
           </button>
           <button class="button header__button" data-modal-open>
             Buy now
             <svg class="header__button__icon">
-              <use
-                href="./src/images/Vlad/svg/symbol-defs.svg#icon-arrow"
-              ></use>
+              <use href="./images/Vlad/svg/symbol-defs.svg#icon-arrow"></use>
             </svg>
           </button>
         </div>
       </header>
       <!-- Hero section -->
-      <div class="hero__inner hero-container">
-        <h1 class="hero__title">
-          <span class="hero__title--span">About Us</span>
-        </h1>
-        <div class="hero__inner--left--div">
-          <div class="hero__inner--left--img"></div>
-        </div>
+      <div class="hero__inner container">
+          <h1 class="hero__title">
+            <span class="hero__title--span">About Us</span>
+          </h1>
+          <div class="hero__inner--left--div">
+            <div class="hero__inner--left--img"></div>
+          </div>
         <!-- Circle and photo div -->
         <div class="hero__circle"></div>
-      </div>
     </section>
-
-    <!--DESCRIPTION--------------------------------------------------->
-
-    <!--GOALS----------------------------------------------->
-
-    <!--MEMBERS------------------------------------------------->
-
-    <!--FOOTER--------------------------------------------------------->
-    <footer class="footer__container">
-      <div class="container">
-        <h2 class="footer__container--title" id="footer">Footer</h2>
-        <div class="footer__container--top">
-          <div class="footer__container--left">
-            <div class="footer__container__msg">
-              <p class="footer__container__msg--title">homemade ice cream</p>
-              <span class="footer__container__msg--title-clickable">made</span>
-            </div>
-            <div class="footer__container__msg--subtitle">
-              <span>w</span>
-              <span>i</span>
-              <span>t</span>
-              <span>h</span>
-              <span>&nbsp;</span>
-              <span>p</span>
-              <span>a</span>
-              <span>s</span>
-              <span>s</span>
-              <span>i</span>
-              <span>o</span>
-              <span>n</span>
-            </div>
-          </div>
-          <div class="footer__container--right">
-            <ul class="footer__social__list container--unstyled-list">
-              <li class="footer__social__list">
-                <a class="footer__social__list--link" href="#" target="_blank">
-                  <svg class="footer__social__list--icon">
-                    <use href="./src/images/icons.svg#icon_github"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="footer__social__list">
-                <a class="footer__social__list--link" href="#" target="_blank">
-                  <svg class="footer__social__list--icon">
-                    <use href="./src/images/icons.svg#icon_telegram"></use>
-                  </svg>
-                </a>
-              </li>
-
-              <li class="footer__social__list">
-                <a class="footer__social__list--link" href="#" target="_blank">
-                  <svg class="footer__social__list--icon">
-                    <use href="./src/images/icons.svg#icon_facebook"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-
-            <div class="footer__contact--link">
-              <span class="footer__contact--text">Feel free to contact</span>
-              <a
-                href="tel:+610383766284"
-                class="footer__contact--phone container--link"
-                >+61 (0) 383 766 284</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="footer__container--copyright">
-          <p class="footer__container--copyright_text">
-            &#169; 2022 - IceCream. All Rights Reserved.
-          </p>
-        </div>
-      </div>
-    </footer>
-    <!-- Modal window -->
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="js-close-menu close-menu">
         <svg
@@ -264,6 +184,7 @@
         </li>
       </ul>
     </div>
+    <!--JS Files-->
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
