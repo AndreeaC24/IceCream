@@ -2395,7 +2395,7 @@ input:checked + .carousel__item .carousel__item__review {
 .goal-section {
   width: 100%;
   margin: 0 auto;
-  background-image: url("/images/background-pic/Background-760.png");
+  background-image: url("/src/images/pictures/background-pic/Background-760.png");
   background-repeat: no-repeat;
 }
 .container-flex {
@@ -2484,7 +2484,7 @@ input:checked + .carousel__item .carousel__item__review {
 }
 @media screen and (min-width: 780px) {
   .goal-section {
-    background-image: url("/images/background-pic/Background-960.png");
+    background-image: url("/src/images/pictures/background-pic/Background-960.png");
   }
 }
 @media screen and (min-width: 780px) {
@@ -2509,7 +2509,7 @@ input:checked + .carousel__item .carousel__item__review {
 @media screen and (min-width: 1280px) {
   .goal-section {
     max-width: 1600px;
-    background-image: url("/images/background-pic/Background-1600.png");
+    background-image: url("/src/images/pictures/background-pic/Background-1600.png");
   }
   .container-flex {
     max-width: 1280px;
