@@ -2246,7 +2246,7 @@ input:checked + .carousel__item .carousel__item__review {
   transition-duration: 500ms;
 }
 .page-paragraph {
-  color: var(--writing-color);
+  color: var(--black-color);
   font-family: DM Sans;
   font-weight: 700px;
   font-size: 14px;
@@ -2451,7 +2451,7 @@ input:checked + .carousel__item .carousel__item__review {
   top: 30px;
 }
 .awards {
-  color: var(--writing-color);
+  color: var(--black-color);
   font-family: DM Sans;
   font-weight: 700px;
   font-size: 42px;
