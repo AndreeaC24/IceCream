@@ -77,3 +77,21 @@
     }
   }
 }
+
+
+// Mixins
+@mixin paddings($paddingL, $paddingR) {
+  padding-left: $paddingL;
+  padding-right: $paddingR; 
+}
+@mixin textStyles ($font-family, $letter-spacing, $line-height, $font-size ,$font-weight){
+  font-family:$font-family;
+  letter-spacing:$letter-spacing;
+  line-height: $line-height;
+  font-size:$font-size;
+  font-weight:$font-weight;
+}
+@mixin marginesPaddings ($margin, $padding) {
+  margin:$margin;
+  padding: $padding;
+}
