@@ -1,4 +1,4 @@
-@import "../utils/vars";
+@import "../utils/variables";
 
 .container-ourgoal {
   max-width: 480px;
@@ -27,7 +27,7 @@
   }
 }
 .page-paragraph {
-  color: var(--writing-color);
+  color: var(--black-color);
   font-family: DM Sans;
   font-weight: 700px;
   font-size: 14px;
