@@ -67,4 +67,13 @@
       }
     }
   }
-  
+  @mixin gallery-list-item($items...) {
+  @each $item in $items {
+    $index: nth($item, 1);
+    $top: nth($item, 2);
+    &:nth-child(#{$index}) {
+      position: relative;
+      top: $top;
+    }
+  }
+}
