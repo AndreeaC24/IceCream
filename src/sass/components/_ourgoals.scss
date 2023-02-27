@@ -90,6 +90,9 @@
   align-items: center;
 }
 @media screen and (min-width: 780px) {
+  .container-flex{
+    max-width: 680px;
+  }
   .goal-section {
     background-image: url("/src/images/pictures/background-pic/Background-960.png");
   }
@@ -98,14 +101,18 @@
 @media screen and (min-width: 780px) {
   .description-list {
     position: relative;
-    top: -75px;
+    top: -45px;
     left: 100px;
   }
+  .description-item{
+    max-width: 210px;
+  }
   .pink-image {
+    max-width: 250px;
     display: flex;
     margin-top: 40px;
     position: relative;
-    top: -300px;
+    top: -150px;
     left: -250px;
     transition-property: transform;
     &:hover {
@@ -116,6 +123,7 @@
 }
 @media screen and (min-width: 1280px) {
   .goal-section {
+    margin-bottom: 100px;
     max-width: 1600px;
     background-image: url("/src/images/pictures/background-pic/Background-1600.png");
   }
@@ -141,5 +149,6 @@
     position: relative;
     top: 100px;
     left: -50px;
+    z-index: 99;
   }
 }
