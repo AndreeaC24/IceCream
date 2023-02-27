@@ -23,12 +23,415 @@
     />
   </head>
 
-<body>
+  <body>
+<!--HERO------------------------------------------------------->
+    <section class="hero">
+      <!-- Bubbles -->
+      <div class="bubbles">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+      </div>
+      <!-- Fereastra modala -->
+      <div class="modal is-hidden" data-modal>
+        <div class="modal-inner">
+          <button class="modal-close" type="button" data-modal-close>
+            <svg width="11" height="11">
+              <line x1="0" y1="0" x2="11" y2="11" stroke-width="4" />
+              <line x1="11" y1="0" x2="0" y2="11" stroke-width="4" />
+            </svg>
+          </button>
+          <h2 class="hero__title">Super duper Ice Cream</h2>
+          <form class="modal__form">
+            <input type="text" name="name" placeholder="Name" />
+            <input type="tel" name="phone" placeholder="Phone" />
+            <input type="email" name="email" placeholder="Mail" />
+            <textarea
+              name="Message"
+              placeholder="Write us something"
+            ></textarea>
+          </form>
+          <button class="form__button">I want that</button>
+        </div>
+      </div>
+      <!-- Fereastra modala -->
+      <div class="modal is-hidden" data-modal>
+        <div class="modal-inner">
+          <button class="modal-close" type="button" data-modal-close1>
+            <svg width="11" height="11">
+              <line x1="0" y1="0" x2="11" y2="11" stroke-width="4" />
+              <line x1="11" y1="0" x2="0" y2="11" stroke-width="4" />
+            </svg>
+          </button>
+          <h2 class="hero__title">Super duper Ice Cream</h2>
+          <form class="modal__form">
+            <input type="text" name="name" placeholder="Name" />
+            <input type="tel" name="phone" placeholder="Phone" />
+            <input type="email" name="email" placeholder="Mail" />
+            <textarea
+              name="Message"
+              placeholder="Write us something"
+            ></textarea>
+          </form>
+          <button class="form__button">I want that</button>
+        </div>
+      </div>
+
 <!--HEADER----------------------------------------------------->
+      <header class="header">
+        <div class="header__inner hero-container">
+          <img
+            width="200"
+            height="50"
+            srcset="
+              ./src/images/Vlad/logo/Grouplogo.png    200w,
+              ./src/images/Vlad/logo/GroupLogo400.png 400w
+            "
+            src="./src/images/Vlad/logo/Grouplogo.png"
+            alt="logo"
+          />
+          <nav>
+            <ul class="header__nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about_us.html">About us</a></li>
+              <li><a href="">How it's made?</a></li>
+              <li><a href="#products">Our products</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </nav>
+          <button class="button--nav js-open-menu">
+            <svg class="nav--icon">
+              <use
+                href="./src/images/Vlad/svg/symbol-defs.svg#icon-nav-button"
+              ></use>
+            </svg>
+          </button>
+          <button class="button header__button" data-modal-open>
+            Buy now
+            <svg class="header__button__icon">
+              <use
+                href="./src/images/Vlad/svg/symbol-defs.svg#icon-arrow"
+              ></use>
+            </svg>
+          </button>
+        </div>
+      </header>
 
 <!--HERO------------------------------------------------------->
-
-<!--PRODUCTS--------------------------------------------------->
+      <div class="hero__inner hero-container">
+        <div class="hero__inner--left">
+          <h1 class="hero__title">
+            ice cream made with
+            <span class="hero__title--span">passion</span>
+          </h1>
+          <ul class="hero__inner__list">
+            <li><button class="button--red">Products</button></li>
+            <li>
+              <button class="button--white">How it's made?</button>
+            </li>
+            <li>
+              <button class="button--red hide--button" data-modal-open1>
+                Buy now
+              </button>
+            </li>
+          </ul>
+          <div class="hero__inner--left--div">
+            <div class="hero__inner--left--img"></div>
+            <div>
+              <p class="hero__inner--text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et
+              </p>
+              <a class="hero__inner--link">
+                <svg class="hero__inner--icon">
+                  <use
+                    href="./src/images/Vlad/svg/symbol-defs.svg#icon-vector"
+                  ></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Circle and photo div -->
+        <div class="hero__circle"></div>
+        <div class="hero__photo"></div>
+        <!-- End of circle and photo div -->
+        <div class="hero__inner--right">
+          <div class="hero__inner--right--div">
+            <div class="hero__circle--small"></div>
+            <p class="hero__inner--number">16</p>
+            <p class="hero__inner--fresh">cafes</p>
+          </div>
+          <div class="hero__inner--right--div">
+            <div class="hero__circle--small"></div>
+            <p class="hero__inner--number">23</p>
+            <p class="hero__inner--fresh">food trucks</p>
+          </div>
+          <div class="hero__right--image"></div>
+        </div>
+      </div>
+    </section>
+    <!--PRODUCTS--------------------------------------------------->
+    <section class="product" id="products">
+      <div class="container">
+        <h3 class="product__header-label ">100% natural</h3>
+        <h2 class="product__header">products</h2>
+        <ul class="product__list container--link">
+          <li class="product__container--flip">
+            <input type="checkbox" class="product__container--flip-checkbox" id="product__container--flip-checkbox-1" />
+            <div class="flipper--inner">
+              <div class="flipper--front">
+                <img srcset="./src/images/products/products1.png 480w,
+                  ./src/images/products/products1@2x.png 960w
+                " src="./src/images/products/products1" sizes="480px" alt="icecream" class="product__img" />
+  
+                <div class="product__item">
+                  <div class="product__item--trans">
+                    <h3 class="product__name">ice cream</h3>
+                    <span class="product--marker">
+                      <svg>
+                        <use href="./src/images/icons.svg#bullet"></use>
+                      </svg>
+                      <svg>
+                        <use href="./src/images/icons.svg#bullet"></use>
+                      </svg>
+                      <svg>
+                        <use href="./src/images/icons.svg#bullet"></use>
+                      </svg>
+                    </span>
+                    <p class="product__description">
+                      Treat yourself to a scoop (or two!) of our creamy, dreamy ice cream.<br>
+                      Come and satisfy your sweet tooth today!
+                    </p>
+                    <label for="product__container--flip-checkbox-1" class="flipper--inner-label">
+                      <svg>
+                        <use href="./src/images/icons.svg#arrow_right"></use>
+                      </svg>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="flipper--back">
+                <div class="product__item">
+                  <img srcset="
+                    ./src/images/products/products1.png 480w,
+                    ./src/images/products/products1@2x.png 960w
+                  " src="./src/images/products/products1.png" sizes="480px" alt="icecream" class="product__img" />
+  
+                  <div class="product__item--trans">
+                    <h3 class="product__name">ice cream</h3>
+                    <span class="product--marker">
+                      <svg>
+                        <use href="./src/images/icons.svg#bullet"></use>
+                      </svg>
+                      <svg>
+                        <use href="./src/images/icons.svg#bullet"></use>
+                      </svg>
+                      <svg>
+                        <use href="./src/images/icons.svg#bullet"></use>
+                      </svg>
+                    </span>
+                    <p class="product__description product__description--back">
+                      Made with only the freshest ingredients, our ice cream comes in a variety of flavors ranging from
+                      classic vanilla to funky cookie dough fudge.
+                    </p>
+                    <label for="product__container--flip-checkbox-1" class="flipper--inner-label">
+                      <svg>
+                        <use href="./src/images/icons.svg#arrow_left"></use>
+                      </svg>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="product__container--flip product__container--flip--2">
+            <input type="checkbox" class="product__container--flip-checkbox" id="product__container--flip-checkbox-2" />
+            <div class="flipper--inner">
+              <div class="flipper--front flipper--front--2">
+                <div class="product__item">
+                  <img srcset="
+                    ./src/images/products/products2.png 480w,
+                    ./src/images/products/products2@2x.png 960w
+                    " src="./src/images/products/products2.png" sizes="480px" alt="icecream" class="product__img" />
+                  <div class="product__item--trans">
+                    <h3 class="product__name">ice cofee</h3>
+                    <span class="product--marker">
+                      <svg>
+                        <use href="./src/images/icons.svg#bullet"></use>
+                      </svg>
+                      <svg>
+                        <use href="./src/images/icons.svg#bullet"></use>
+                      </svg>
+                      <svg>
+                        <use href="./src/images/icons.svg#bullet"></use>
+                      </svg>
+                    </span>
+                    <p class="product__description">
+                      Hey!Are you ready?<br>
+                      Stay cool this summer with our refreshing iced coffee drinks.<br>
+                      Come chill with us today!
+                    </p>
+                    <label for="product__container--flip-checkbox-2" class="flipper--inner-label">
+                      <svg>
+                        <use href="./src/images/icons.svg#arrow_right"></use>
+                      </svg>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="flipper--back flipper--back--2">
+                <div class="product__item">
+                  <img srcset="
+                    ./src/images/products/products2.png    480w,
+                    ./src/images/products/products2@2x.png 960w
+                  " src="./src/images/products/testimonial2.png" sizes="480px" alt="icecream" class="product__img" />
+  
+                  <div class="product__item--trans">
+                    <h3 class="product__name">ice coffee</h3>
+                    <span class="product--marker">
+                      <svg>
+                        <use href="./src/images/icons.svg#bullet"></use>
+                      </svg>
+                      <svg>
+                        <use href="./src/images/icons.svg#bullet"></use>
+                      </svg>
+                      <svg>
+                        <use href="./src/images/icons.svg#bullet"></use>
+                      </svg>
+                    </span>
+                    <p class="product__description product__description--back">
+                      From our smooth and creamy vanilla latte to our cold brew, our baristas will craft the perfect drink
+                      to get you through any hot day.
+                    </p>
+                    <label for="product__container--flip-checkbox-2" class="flipper--inner-label">
+                      <svg>
+                        <use href="./src/images/icons.svg#arrow_left"></use>
+                      </svg>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="product__container--flip product__container--flip--3">
+            <input type="checkbox" class="product__container--flip-checkbox" id="product__container--flip-checkbox-3" />
+            <div class="flipper--inner">
+              <div class="flipper--front flipper--front--3">
+                <div class="product__item">
+                  <img srcset="
+                    ./src/images/products/products3.png    480w,
+                    ./src/images/products/products3@2x.png 960w
+                    " src="./src/images/products/products3.png" sizes="480px" alt="icecream" class="product__img" />
+                  <div class="product__item--trans">
+                    <h3 class="product__name">milkshakes</h3>
+                    <span class="product--marker">
+                      <svg>
+                        <use href="./src/images/icons.svg#bullet"></use>
+                      </svg>
+                      <svg>
+                        <use href="./src/images/icons.svg#bullet"></use>
+                      </svg>
+                      <svg>
+                        <use href="./src/images/icons.svg#bullet"></use>
+                      </svg>
+                    </span>
+                    <p class="product__description">
+                      Sip on our delicious milkshakes made with premium ice cream and topped with whipped cream and a
+                      cherry.
+                    </p>
+                    <label for="product__container--flip-checkbox-3" class="flipper--inner-label">
+                      <svg>
+                        <use href="./src/images/icons.svg#arrow_right"></use>
+                      </svg>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="flipper--back flipper--back--3">
+                <div class="product__item">
+                  <img srcset="
+                    ./src/images/products/products3.png 480w,
+                    ./src/images/products/products3@2x.png 960w
+                    " src="./src/images/products/products4.png" sizes="480px" alt="icecream" class="product__img" />
+  
+                  <div class="product__item--trans">
+                    <h3 class="product__name">milkshakes</h3>
+                    <span class="product--marker">
+                      <svg>
+                        <use href="./src/images/icons.svg#bullet"></use>
+                      </svg>
+                      <svg>
+                        <use href="./src/images/icons.svg#bullet"></use>
+                      </svg>
+                      <svg>
+                        <use href="./src/images/icons.svg#bullet"></use>
+                      </svg>
+                    </span>
+                    <p class="product__description product__description product__description--back">
+                      Indulge in classic flavors like chocolate and vanilla, or try something new like our signature
+                      salted caramel milkshake.
+                    </p>
+                    <label for="product__container--flip-checkbox-3" class="flipper--inner-label">
+                      <svg>
+                        <use href="./src/images/icons.svg#arrow_left"></use>
+                      </svg>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
 
     <!--HOW-its-MADE----------------------------------------------->
 
@@ -229,14 +632,12 @@
             class="carousel__inner__control carousel__inner__control--next carousel__inner__control--3"
           >
             <svg class="carousel__inner--svg">
-              <use href="./src/images/icons.svg#circle_right"></use></svg
-          ></label>
+              <use href="./src/images/icons.svg#circle_right"></use></svg></label>
           <ol class="carousel__inner__indicators container--unstyled-list">
             <li>
               <label
                 for="carousel-1"
-                class="carousel__inner__indicators--bullet"
-              >
+                class="carousel__inner__indicators--bullet">
                 <svg class="carousel__inner--svg">
                   <use href="./src/images/icons.svg#bullet"></use>
                 </svg>
@@ -245,17 +646,14 @@
             <li>
               <label
                 for="carousel-2"
-                class="carousel__inner__indicators--bullet"
-              >
+                class="carousel__inner__indicators--bullet">
                 <svg class="carousel__inner--svg">
-                  <use href="./src/images/icons.svg#bullet"></use></svg
-              ></label>
+                  <use href="./src/images/icons.svg#bullet"></use></svg></label>
             </li>
             <li>
               <label
                 for="carousel-3"
-                class="carousel__inner__indicators--bullet"
-              >
+                class="carousel__inner__indicators--bullet">
                 <svg class="carousel__inner--svg">
                   <use href="./src/images/icons.svg#bullet"></use>
                 </svg>
@@ -333,8 +731,52 @@
             &#169; 2022 - IceCream. All Rights Reserved.
           </p>
       </div>
-  </div>
-</footer>
-  <!--JS Files-->
+    </footer>
+      
+      
+    <!-- Fereastra modala -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="js-close-menu close-menu">
+        <svg
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li class="mobile-menu__item">
+          <a class="link" href="index.html"> Home </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="link" href="about_us.html"> About us </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="link" href="contacts.html"> How it's made? </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="link" href="contacts.html"> Our products </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="link" href="contacts.html"> Contact </a>
+        </li>
+      </ul>
+    </div>
+    <!--JS Files-->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./src/js/heroMobileMenu.js"></script>
+    <script src="./src/js/heroModal.js"></script>
+    <script src="./src/js/heroModal1.js"></script>
 </body>
 </html>

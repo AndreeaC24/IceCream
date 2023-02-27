@@ -26,3 +26,22 @@
     cursor: pointer;
   }
  
+  %flipper{
+    width: 280px;
+    height: 489px;
+    border-radius: 25px;
+    background-color: var( --primary1-color);
+}
+%flipper2nd{
+    background-color:var(--primary2-color);
+}
+%flipper3rd{
+    background-color:var(--primary3-color);
+}
+%visibilityFlipper{
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
