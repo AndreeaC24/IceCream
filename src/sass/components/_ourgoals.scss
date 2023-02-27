@@ -133,14 +133,15 @@
   }
   .description-list {
     position: relative;
-    top: 75px;
+    top: 60px;
     left: -50px;
-    z-index:99;
+
   }
   .pink-image {
     width: 368px;
     position: relative;
     top: 100px;
     left: -50px;
+    z-index: 99;
   }
 }
