@@ -1,6 +1,6 @@
 /*Products*/
 .product{
-  font-family: var(----second-font);
+  font-family: var(--second-font);
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--white-color);
@@ -174,7 +174,6 @@
             }
         }
         &__list{
-            display: flex;
             flex-direction: row;
             padding-top: 12px;
             gap: 16px;
